@@ -1,0 +1,18 @@
+{
+  "name": "node_mynthra_project",
+  "version": "1.0.0",
+  "description": "\"mynthra clone project\"",
+  "main": "server.js",
+  "repository": "https://github.com/Ravikumar14/node_mynthra.git",
+  "author": "Ravi",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "jquery": "^3.5.1",
+    "mongoose": "^5.9.26",
+    "popper.js": "^1.16.1"
+  }
+}
