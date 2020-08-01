@@ -30,6 +30,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/node_modules"))
 /*=======================================load ROUTES assets======================================*/
+app.get("/", (req, res) => {
+    res.render('home.handlebars')
+})
 app.use('/profile/', require('./Routes/profiles/profile'))
 app.use('/auth/', require('./Routes/auth/auth'))
 app.use('/sports/', require('./Routes/products/sports'))
