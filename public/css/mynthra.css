@@ -1,0 +1,85 @@
+body {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+.navbar {
+	background-color: #fff !important;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 3px 1px #eee;
+	height: 80px;
+}
+.navbar-brand img {
+	width: 50px;
+	height: 50px;
+	margin-left: 20px;
+}
+.nav-link {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 600;
+	text-shadow: 2px #eee;
+	color: #111 !important;
+	padding-bottom: 10px;
+	margin-left: 20px;
+	height: 60px;
+	margin-top: 20px;
+}
+.navbar .nav-link:hover {
+	border-bottom: 4px solid red;
+	border-collapse: separate;
+	border-width: thick;
+}
+.RightNav .nav-link {
+	text-transform: capitalize !important;
+	margin-top: 20px;
+	margin-left: 30px;
+	border: none;
+	height: 60px;
+}
+.RightNav .nav-link .fa-user-circle {
+	font-size: 20px;
+	position: relative;
+	left: 11px;
+	text-align: center;
+}
+.RightNav .nav-link .fa-bookmark {
+	font-size: 20px;
+	position: relative;
+	left: 20px;
+	text-align: center;
+}
+.RightNav .nav-link .fa-shopping-bag {
+	font-size: 20px;
+	position: relative;
+	left: 4px;
+	text-align: center;
+	border: none !important;
+}
+.SearchBox .search {
+	background-color: #eee;
+	font-weight: 400;
+	font-size: unset;
+	width: 500px;
+	padding-left: 40px;
+	margin-left: 62px;
+	border: none !important;
+	margin-bottom: 24px;
+}
+.SearchBox span {
+	padding: 0;
+	margin: 0;
+}
+.SearchBox span i {
+	text-align: justify;
+	position: relative;
+	top: 32px;
+	left: 74px;
+	color: #767 !important;
+	font-size: 15px !important;
+	font-weight: 600;
+}
+table img{
+	width: 100px;
+	height: 100px;
+}

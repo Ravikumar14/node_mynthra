@@ -1,6 +1,7 @@
 const express = require("express")
 const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser")
+const Handlebars = require('handlebars')
 const app = express();
 const { connect } = require("mongoose")
 const { PORT, MONGODB_URL } = require('./config')
@@ -21,7 +22,10 @@ app.set("view engine", "handlebars");
 
 /* =========================================Template middleware engine ends here============================================== */
 
-
+Handlebars.registerHelper('removeFirst6Char', (str) => {
+    let TrimValue = [...str].splice(6).join('');
+    return new Handlebars.SafeString(TrimValue);
+});
 /*=========================================body parser incoming request starts here====================================*/
 
 app.use(bodyParser.json());

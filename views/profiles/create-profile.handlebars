@@ -1,5 +1,9 @@
 <div class="col-md-12">
-    <form action="/profile/create-profile" method="post">
+    <form action="/profile/create-profile" method="post" enctype="multipart/form-data">
+    <div class="col-md-4">
+        <input type="file" name="photo" placeholder="Upload a photo" id="photo" class="form-control" required>
+    </div>
+
     <div class="col-md-4">
         <input type="text" name="firstname" placeholder="firstname" id="firstname" class="form-control" required>
     </div>
