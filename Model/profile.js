@@ -12,9 +12,23 @@ const ProfileSchema = new Schema(
             type: String,
             required: true,
         },
+        designation: {
+            type: String,
+            required: true,
+        },
         phone: {
             type: String,
             required: true,
+        },
+        email: {
+            type: String,
+            required: true,
+        },
+
+        skills: {
+            type: [],
+            required: true,
+            default: false,
         },
         address: {
             type: String,

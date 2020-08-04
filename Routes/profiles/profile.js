@@ -18,12 +18,24 @@ router.get('/all-profiles', (req, res) => {
     Profile.find({}).sort({ data: 'desc' }).lean().then((profile) => {
         res.render("./profiles/all-profiles", { profile });
     }).catch((err) => console.log(err));
+});
+
+/*===========================get profile details====================================*/
+router.get("/user-profile/:id", (req, res) => {
+    Profile.findOne({ _id: req.params.id }).lean().then(profile_detail => {
+        res.render("./profiles/user-profile", { profile_detail })
+    }).catch(err => console.log(err))
 })
+
+
 router.post('/create-profile', upload.single('photo'), (req, res) => {
     let {
         firstname,
         lastname,
+        designation,
         phone,
+        email,
+        skills,
         address,
         alt_address,
         gender,
@@ -35,7 +47,10 @@ router.post('/create-profile', upload.single('photo'), (req, res) => {
         photo: req.file,
         firstname,
         lastname,
+        designation,
         phone,
+        email,
+        skills,
         address,
         alt_address,
         gender,

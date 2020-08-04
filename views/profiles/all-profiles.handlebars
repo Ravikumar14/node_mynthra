@@ -5,13 +5,16 @@
                     <th>Photo</th>
                     <th>Firstname</th>
                     <th>Lastname</th>
+                    <th>Designation</th>
                     <th>Phone</th>
+                    
                     <th>Address</th>
                     <th>Alternative Address</th>
                     <th>Gender</th>
                     <th>Country</th>
                     <th>Pincode</th>
                     <th>Landmark</th>
+                    <th>Details</th>
                 </thead>
                 
                     {{#each profile}}
@@ -25,6 +28,7 @@
                    
                     <td>{{firstname}}</td>
                     <td>{{lastname}}</td>
+                    <td>{{designation}}</td>
                     <td>{{phone}}</td>
                     <td>{{address}}</td>
                     <td>{{alt_address}}</td>
@@ -32,6 +36,7 @@
                     <td>{{country}}</td>
                     <td>{{pincode}}</td>
                     <td>{{landmark}}</td>
+                    <td><a href="/profile/user-profile/{{_id}}" class="badge badge-primary p-2">Details</a> </td>
                     </tr>
                     </tbody>
                     
