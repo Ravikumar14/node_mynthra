@@ -176,3 +176,18 @@ table img {
 	font-weight: 600;
 	color: #0062cc;
 }
+.alert{
+	position: absolute;
+	right: 0;
+	top: 8%;
+	transform: translate(0px);
+	transition: ease all .7s;
+}
+.centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
